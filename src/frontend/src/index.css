@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Gurmukhi:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 96 0.02 85;
+    --foreground: 22 0.07 245;
+
+    --card: 100 0 0;
+    --card-foreground: 22 0.07 245;
+
+    --popover: 100 0 0;
+    --popover-foreground: 22 0.07 245;
+
+    --primary: 32 0.07 240;
+    --primary-foreground: 100 0 0;
+
+    --secondary: 88 0.05 85;
+    --secondary-foreground: 24 0.05 240;
+
+    --muted: 93 0.015 85;
+    --muted-foreground: 53 0.02 240;
+
+    --accent: 88 0.05 85;
+    --accent-foreground: 24 0.05 240;
+
+    --destructive: 50 0.22 25;
+    --destructive-foreground: 100 0 0;
+
+    --border: 90 0.02 85;
+    --input: 90 0.02 85;
+    --ring: 32 0.07 240;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-time: 22 0.07 245;
+    --nav-active-bg: 88 0.05 85;
+    --footer-from: 18 0.06 240;
+    --footer-to: 30 0.07 240;
+    --beige-light: 96 0.02 85;
+    --cream: 94 0.025 85;
+  }
+
+  * {
+    border-color: oklch(var(--border));
+  }
+
+  body {
+    background-color: oklch(var(--background));
+    color: oklch(var(--foreground));
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
